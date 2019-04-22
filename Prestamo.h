@@ -15,6 +15,9 @@ class Prestamo {
 		Estudiante* Auxiliar ; // Mirar a ver si este es necesario
 		
 	public :
+			/** 
+		*@brief constructor de Perstamo sin parametros y sin datos
+		*/
 		Prestamo() ;
 		void CrearArchivoCSVHistorial () ; 
 		void AgregarAlHistorial (ArticuloDePrestamo* ArticuloAPrestar) ;

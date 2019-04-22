@@ -11,13 +11,17 @@ using namespace std ;
 
 class Menu {
 	private :
-		int Opcion ; // Este Atributo es para utilizar solo en el menu 
-					 // para que me vaya almacenando la opciones ingresadas
+		int Opcion ; /** @brief Este Atributo es para utilizar solo en el menu 
+					 * para que me vaya almacenando la opciones ingresadas
+					 */
 		Laboratorio* UsoDelLaboratorio = new Laboratorio () ;  
 		 
 	public :
+			/** 
+		*@brief constructor de MenuIngreso sin parametros y sin datos
+		*/
 		Menu () ; 
-		void MenuIngreso () ;
+		void MenuIngreso () ; 
 		void RegistroIDPersona () ;
 		void MenuDatosExistentes() ;
 		void MenuOpcionesPosibles () ;

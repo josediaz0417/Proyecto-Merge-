@@ -12,12 +12,30 @@ class Profesor : public Persona {
 		string TituloProfesional ;
 		
 	public :
+			/** 
+		*@brief constructor de Profesor sin parametros y sin datos
+		*/
 		Profesor () ;
+			/** 
+		*@brief constructor de Profesor con parametros y datos
+		*/
 		Profesor (string Nombre, string Apellido, string Email, int Edad,
 				  long Cedula, int Telefono, int Codigo, string TituloProfesional) ;
+		/**
+		*@brief asignar valores a un objeto Profesor  (agrega un Codigo)
+		*/			  
 		void setCodigo (int Codigo) ;
+		/**
+		*@brief asignar valores a un objeto Profesor  (agrega un TituloProfesional)
+		*/	
 		void setTituloProfesional (string TituloProfesional) ;
+		/**
+		*@brief lee los  valores de un objeto Profesoor (getCodigo)
+		*/
 		int getCodigo () ;
+		/**
+		*@brief lee los  valores de un objeto Profesoor (getTituloProfesional)
+		*/
 		string getTituloProfesional () ;
 		void CrearDatosDeProfesor (Profesor* Profesor) ;	
 		~Profesor () ;
